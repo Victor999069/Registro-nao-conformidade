@@ -89,13 +89,13 @@ namespace CONTROLE_COMERCIAL
             }
             #endregion
 
-            //#region Conferencia de digito no campo 'Lote'
-            //if (!lote.All(char.IsDigit))
-            //{
-            //    MessageBox.Show("Campo 'Lote' so aceita numeros.");
-            //    //return;
-            //}
-            //#endregion
+            #region conferencia de digito no campo 'lote'
+            if (!lote.All(char.IsDigit))
+            {
+                MessageBox.Show("campo 'lote' so aceita numeros.");
+                return;
+            }
+            #endregion
 
             #region Campo obrigatorio 'Status Ocorrencia'
             if (string.IsNullOrWhiteSpace(status_ocorrencia))
