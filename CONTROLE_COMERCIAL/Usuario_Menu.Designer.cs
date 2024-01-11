@@ -34,11 +34,11 @@
             Tsm_Usuario_Menu = new ToolStripMenuItem();
             Tsm_Ocorrencia_Menu = new ToolStripMenuItem();
             Tsm_RegistrarOcorrencia_Menu = new ToolStripMenuItem();
+            acompanhamentoOcorrenciaToolStripMenuItem = new ToolStripMenuItem();
             Tsm_Modo_Menu = new ToolStripMenuItem();
             Tsm_Sair_menu = new ToolStripMenuItem();
             Tsm_Suporte_Menu = new ToolStripMenuItem();
             pictureBox1 = new PictureBox();
-            acompanhamentoOcorrenciaToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -67,7 +67,7 @@
             // 
             Tsm_Usuario_Menu.Image = (Image)resources.GetObject("Tsm_Usuario_Menu.Image");
             Tsm_Usuario_Menu.Name = "Tsm_Usuario_Menu";
-            Tsm_Usuario_Menu.Size = new Size(132, 26);
+            Tsm_Usuario_Menu.Size = new Size(224, 26);
             Tsm_Usuario_Menu.Text = "Usuario";
             Tsm_Usuario_Menu.Click += Mst_CadastroUsuar_Click;
             // 
@@ -87,6 +87,14 @@
             Tsm_RegistrarOcorrencia_Menu.Size = new Size(291, 26);
             Tsm_RegistrarOcorrencia_Menu.Text = "Registrar Ocorrencia";
             Tsm_RegistrarOcorrencia_Menu.Click += registrarOcorrenciaToolStripMenuItem_Click;
+            // 
+            // acompanhamentoOcorrenciaToolStripMenuItem
+            // 
+            acompanhamentoOcorrenciaToolStripMenuItem.Image = (Image)resources.GetObject("acompanhamentoOcorrenciaToolStripMenuItem.Image");
+            acompanhamentoOcorrenciaToolStripMenuItem.Name = "acompanhamentoOcorrenciaToolStripMenuItem";
+            acompanhamentoOcorrenciaToolStripMenuItem.Size = new Size(291, 26);
+            acompanhamentoOcorrenciaToolStripMenuItem.Text = "Acompanhamento Ocorrencia";
+            acompanhamentoOcorrenciaToolStripMenuItem.Click += acompanhamentoOcorrenciaToolStripMenuItem_Click;
             // 
             // Tsm_Modo_Menu
             // 
@@ -115,19 +123,12 @@
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(0, -202);
+            pictureBox1.Location = new Point(0, 51);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(800, 698);
+            pictureBox1.Size = new Size(800, 399);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
-            // 
-            // acompanhamentoOcorrenciaToolStripMenuItem
-            // 
-            acompanhamentoOcorrenciaToolStripMenuItem.Image = (Image)resources.GetObject("acompanhamentoOcorrenciaToolStripMenuItem.Image");
-            acompanhamentoOcorrenciaToolStripMenuItem.Name = "acompanhamentoOcorrenciaToolStripMenuItem";
-            acompanhamentoOcorrenciaToolStripMenuItem.Size = new Size(291, 26);
-            acompanhamentoOcorrenciaToolStripMenuItem.Text = "Acompanhamento Ocorrencia";
-            acompanhamentoOcorrenciaToolStripMenuItem.Click += acompanhamentoOcorrenciaToolStripMenuItem_Click;
             // 
             // Usuario_Menu
             // 

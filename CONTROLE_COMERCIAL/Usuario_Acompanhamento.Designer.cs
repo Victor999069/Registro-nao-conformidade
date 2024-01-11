@@ -38,7 +38,6 @@
             dataGridView1 = new DataGridView();
             Txb_BuscarOcorrencia = new TextBox();
             Lbl_BuscarOcorrencia = new Label();
-            Dtp_PesquisaInicial = new DateTimePicker();
             menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)conexaoClientBindingSource1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)conexaoClientBindingSource).BeginInit();
@@ -90,11 +89,11 @@
             dataGridView1.AllowUserToDeleteRows = false;
             dataGridView1.AllowUserToOrderColumns = true;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(12, 111);
+            dataGridView1.Location = new Point(12, 99);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.RowTemplate.Height = 29;
-            dataGridView1.Size = new Size(776, 317);
+            dataGridView1.Size = new Size(776, 329);
             dataGridView1.TabIndex = 1;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             dataGridView1.CellFormatting += dataGridView1_CellFormatting;
@@ -102,7 +101,7 @@
             // 
             // Txb_BuscarOcorrencia
             // 
-            Txb_BuscarOcorrencia.Location = new Point(170, 72);
+            Txb_BuscarOcorrencia.Location = new Point(156, 54);
             Txb_BuscarOcorrencia.Name = "Txb_BuscarOcorrencia";
             Txb_BuscarOcorrencia.Size = new Size(125, 27);
             Txb_BuscarOcorrencia.TabIndex = 3;
@@ -111,25 +110,17 @@
             // Lbl_BuscarOcorrencia
             // 
             Lbl_BuscarOcorrencia.AutoSize = true;
-            Lbl_BuscarOcorrencia.Location = new Point(33, 75);
+            Lbl_BuscarOcorrencia.Location = new Point(21, 57);
             Lbl_BuscarOcorrencia.Name = "Lbl_BuscarOcorrencia";
             Lbl_BuscarOcorrencia.Size = new Size(131, 20);
             Lbl_BuscarOcorrencia.TabIndex = 4;
             Lbl_BuscarOcorrencia.Text = "Buscar Ocorrência:";
-            // 
-            // Dtp_PesquisaInicial
-            // 
-            Dtp_PesquisaInicial.Location = new Point(384, 73);
-            Dtp_PesquisaInicial.Name = "Dtp_PesquisaInicial";
-            Dtp_PesquisaInicial.Size = new Size(158, 27);
-            Dtp_PesquisaInicial.TabIndex = 5;
             // 
             // Usuario_Acompanhamento
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 440);
-            Controls.Add(Dtp_PesquisaInicial);
             Controls.Add(Lbl_BuscarOcorrencia);
             Controls.Add(Txb_BuscarOcorrencia);
             Controls.Add(dataGridView1);
@@ -157,6 +148,5 @@
         private ToolStripMenuItem atualizarToolStripMenuItem;
         private TextBox Txb_BuscarOcorrencia;
         private Label Lbl_BuscarOcorrencia;
-        private DateTimePicker Dtp_PesquisaInicial;
     }
 }

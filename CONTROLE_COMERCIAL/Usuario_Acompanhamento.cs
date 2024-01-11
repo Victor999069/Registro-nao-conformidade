@@ -39,8 +39,6 @@ namespace CONTROLE_COMERCIAL
         private void Usuario_Acompanhamento_Load(object sender, EventArgs e)
         {
             PreencherDataGridView();
-
-            BuscarRnc();
         }
 
         private void PreencherDataGridView()
@@ -70,7 +68,7 @@ namespace CONTROLE_COMERCIAL
                 dataGridView1.Columns.Add(checkBoxColumn);
 
                 dataGridView1.DataSource = dt;
-
+                #region
                 dataGridView1.Columns["RNC N"].HeaderText = "Nº RNC";
                 dataGridView1.Columns["Responsavel"].HeaderText = "Responsável";
                 dataGridView1.Columns["Data Ocorrencia"].HeaderText = "Data Ocorrência";
@@ -82,7 +80,7 @@ namespace CONTROLE_COMERCIAL
                 dataGridView1.Columns["Categoria Ocorrencia"].HeaderText = "Categoria Ocorrência";
                 dataGridView1.Columns["Tipo Ocorrencia"].HeaderText = "Tipo Ocorrência";
                 dataGridView1.Columns["Dados Observacao"].HeaderText = "Dados Observação";
-
+                #endregion
                 #region
                 dataGridView1.Columns["Id Registro"].Visible = false;
 
@@ -145,7 +143,7 @@ namespace CONTROLE_COMERCIAL
         {
 
         }
-
+        //Estrutura que repassa as opções para atualizar.
         private void dataGridView1_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
         {
             if (e.ColumnIndex == dataGridView1.Columns["Status"].Index && e.RowIndex >= 0)
@@ -159,7 +157,7 @@ namespace CONTROLE_COMERCIAL
                 }
             }
         }
-
+        //Estrutura que atualiza o status de acordo com o input do usuario
         private async void atualizarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (dataGridView1.SelectedRows.Count > 0)
@@ -179,6 +177,7 @@ namespace CONTROLE_COMERCIAL
             }
         }
 
+        //Estrutura de rota para salvar a mudança realizada do status
         private void AtualizarBancoDeDados(string status, DataGridViewRow dev)
         {
             Conexao_Client connection = new Conexao_Client();
@@ -205,37 +204,7 @@ namespace CONTROLE_COMERCIAL
 
         private void Txb_BuscarOcorrencia_TextChanged(object sender, EventArgs e)
         {
-            
-        }
 
-        private void BuscarRnc()
-        {
-            try
-            {
-                Conexao_Client connection = new Conexao_Client();
-
-                var cone = connection.CriarConexao();
-
-                string buscar = "SELECT * FROM RNC_CADASTR0_OCORRENCIA";
-
-                using (SqlCommand command = new SqlCommand(buscar, cone))
-                {
-                    SqlDataReader reader = command.ExecuteReader();
-
-                    if (reader.Read())
-                    {
-                        string nomeCliente = reader["RNC N"].ToString();
-                        Txb_BuscarOcorrencia.Text = nomeCliente;
-                    }
-
-                    cone.Close();
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Ocorreu um erro ao tentar carregar os dados no TextBox: {ex.Message}");
-            }
-            
         }
     }
 }
