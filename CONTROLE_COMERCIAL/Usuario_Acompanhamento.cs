@@ -202,7 +202,6 @@ namespace CONTROLE_COMERCIAL
             }
         }
 
-
         private void Txb_BuscarOcorrencia_TextChanged(object sender, EventArgs e)
         {
             string busca = Txb_BuscarOcorrencia.Text.ToLower();
