@@ -142,7 +142,7 @@
             // Cbx_TipoOcorre
             // 
             Cbx_TipoOcorre.FormattingEnabled = true;
-            Cbx_TipoOcorre.Items.AddRange(new object[] { "Peça Avariada", "Peça Despadronizada", "Peça em Tamanho Divergente", "Peça com Etiqueta Trocada", "Entrega Atrasada", "Envio Divergente", "Pedido Duplicado", "Problema em Sistema", "Pedido Faltando Peça", "Troca de Peça", "Medida Especial Não Informada" });
+            Cbx_TipoOcorre.Items.AddRange(new object[] { "Peça Avariada", "Peça Despadronizada", "Peça em Tamanho Divergente", "Peça com Etiqueta Trocada", "Entrega Atrasada", "Envio Divergente", "Pedido Duplicado", "Problema em Sistema", "Pedido Faltando Peça", "Troca de Peça", "Falha no processo", "Medida Especial Não Informada" });
             Cbx_TipoOcorre.Location = new Point(559, 249);
             Cbx_TipoOcorre.MaxDropDownItems = 10;
             Cbx_TipoOcorre.Name = "Cbx_TipoOcorre";
@@ -163,7 +163,7 @@
             // Cbx_Categoria
             // 
             Cbx_Categoria.FormattingEnabled = true;
-            Cbx_Categoria.Items.AddRange(new object[] { "Não Conformidade", "Reclamação Cliente Interno", "Reclamação Cliente Externo", "Falha de Comunicação" });
+            Cbx_Categoria.Items.AddRange(new object[] { "Não Conformidade", "Reclamação Cliente Interno", "Reclamação Cliente Externo", "Falha de Comunicação", "Tecnologia", "Infraestrutura" });
             Cbx_Categoria.Location = new Point(216, 301);
             Cbx_Categoria.Name = "Cbx_Categoria";
             Cbx_Categoria.Size = new Size(210, 28);
@@ -277,7 +277,7 @@
             // Cbx_Setor
             // 
             Cbx_Setor.FormattingEnabled = true;
-            Cbx_Setor.Items.AddRange(new object[] { "Produção", "Comercial", "Expedição", "Financeiro", "Desenvolvimento", "Corte", "Pcp", "Diretoria", "Qualidade" });
+            Cbx_Setor.Items.AddRange(new object[] { "Comercial", "Corte", "Desenvolvimento", "Diretoria", "Expedição", "Financeiro", "Produção", "Pcp", "Qualidade" });
             Cbx_Setor.Location = new Point(365, 241);
             Cbx_Setor.Name = "Cbx_Setor";
             Cbx_Setor.Size = new Size(159, 28);
@@ -297,7 +297,7 @@
             // Cbx_Origem
             // 
             Cbx_Origem.FormattingEnabled = true;
-            Cbx_Origem.Items.AddRange(new object[] { "Produção", "Comercial", "Expedição", "Financeiro", "Desenvolvimento", "Corte", "Pcp", "Diretoria", "Qualidade", "Fornecedor", "Auditoria Externa", "Auditoria Interna", "Produto", "Cliente", "Logística" });
+            Cbx_Origem.Items.AddRange(new object[] { "Produção", "Comercial", "Expedição", "Financeiro", "Desenvolvimento", "Corte", "Pcp", "Sistema de ERP", "Diretoria", "Qualidade", "Fornecedor", "Auditoria Externa", "Auditoria Interna", "Produto", "Cliente", "Logística" });
             Cbx_Origem.Location = new Point(644, 241);
             Cbx_Origem.Name = "Cbx_Origem";
             Cbx_Origem.Size = new Size(161, 28);

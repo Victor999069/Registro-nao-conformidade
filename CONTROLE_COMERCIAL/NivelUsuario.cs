@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace CONTROLE_COMERCIAL
 {
-    internal class NivelUsuario
+    public class NivelUsuario
     {
+
     }
 }

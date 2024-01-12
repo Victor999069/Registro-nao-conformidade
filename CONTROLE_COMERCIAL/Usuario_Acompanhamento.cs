@@ -202,9 +202,26 @@ namespace CONTROLE_COMERCIAL
             }
         }
 
+
         private void Txb_BuscarOcorrencia_TextChanged(object sender, EventArgs e)
         {
+            string busca = Txb_BuscarOcorrencia.Text.ToLower();
 
+            string colunadebusca = "RNC N";
+
+            foreach(DataGridViewRow row in dataGridView1.Rows) 
+            { 
+                DataGridViewCell cell = row.Cells[colunadebusca];
+                if (cell != null && cell.Value != null && cell.Value.ToString().ToLower().Contains(busca))
+                {
+                    dataGridView1.ClearSelection();
+                    row.Selected = true;
+
+                    dataGridView1.FirstDisplayedScrollingRowIndex = row.Index;
+
+                    return;
+                }
+            }
         }
     }
 }
